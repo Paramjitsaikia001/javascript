@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <div id="demo2"></div>
+    <script>
+        let fruit = { Mango: 900, Banana: 300, apple: 100 };
+        let arr=["Mango: 900"," Banana: 300","apple: 100"];
+        let test = "";
+        for (let [fruits, price] of Object.entries(fruit)) {
+            test += fruits + ":" + price + "<br>"
+        }
+        document.getElementById("demo").innerHTML = test;
+        document.getElementById("demo2").innerHTML = arr;
+    </script>
+</body>
+
+</html>

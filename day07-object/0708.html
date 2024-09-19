@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object method</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <script>
+        const person={
+            firstName:"paramjit",
+            lastName:"saikia",
+            age:89
+        };
+        // person.name=function(){
+        //     return this.firstName+" "+this.lastName;
+        // }
+
+        person.name=function(){
+            return (this.firstName+" "+this.lastName).toUpperCase();
+        }
+        document.getElementById("demo").innerHTML=person.name();
+    </script>
+</body>
+</html>

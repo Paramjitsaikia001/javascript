@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <div id="demo2"></div>
+    <div id="demo3"></div>
+    <div id="demo4"></div>
+    <div id="demo5"></div>
+    <div id="demo6"></div>
+    <div id="demo7"></div>
+    <div id="demo8"></div>
+    <div id="demo9"></div>
+    <div id="demo10"></div>
+    <div id="demo11"></div>
+    <div id="demo12"></div>
+    <div id="demo13"></div>
+    <div id="demo14"></div>
+    <div id="demo15"></div>
+    <div id="demo16"></div>
+
+    <script>
+         let text="Hello World!";
+         let letter=text.at(2);
+        document.getElementById("demo").innerHTML=text.charAt(0);
+        // to print the code of the character
+        document.getElementById("demo2").innerHTML=text.charCodeAt(1);
+      
+        document.getElementById("demo3").innerHTML=letter;
+        let letter2=text[4];
+        document.getElementById("demo4").innerHTML=letter2;
+        let part=text.slice(5,11);
+        document.getElementById("demo5").innerHTML=part;
+        // let part2=text.slice(5);
+        let part2=text.slice(-6);
+        document.getElementById("demo6").innerHTML=part2;
+        document.getElementById("demo7").innerHTML=text.substring(0,5);
+        document.getElementById("demo8").innerHTML=text.substr(0,2);//second paremeter determine the length for extract
+
+        let firstName="paramjit";
+        let lastName="SAIKIA";
+        document.getElementById("demo9").innerHTML=firstName.toUpperCase()+" "+lastName.toLowerCase();
+        let fullName=firstName.concat(" ",lastName);
+        document.getElementById("demo10").innerHTML=fullName
+
+        //remove the white space
+        let remove="      white space";
+        let trim=remove.trim();
+        document.getElementById("demo11").innerHTML=remove +"length before trim: "+remove.length;
+        document.getElementById("demo12").innerHTML=trim+"length after trim: "+trim.length ;
+        let repeat =text.repeat(5);
+        document.getElementById("demo13").innerHTML=repeat;
+        document.getElementById("demo14").innerHTML=text.replace("World","Paramjit");
+        document.getElementById("demo15").innerHTML=repeat.replaceAll("World","Paramjit");
+
+        </script>
+</body>
+</html>

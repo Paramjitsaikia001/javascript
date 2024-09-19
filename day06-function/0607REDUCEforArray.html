@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <div id="demo2"></div>
+    <script>
+        let arr = [2, 4, 8, 1];
+
+        //reduce function return only one value
+        //this is for sum of all number
+        let output = arr.reduce((result, currentValue) => {
+            return result + currentValue;
+        })
+        document.getElementById("demo").innerHTML = output;
+
+        //this is for return maximum value
+        let output2=arr.reduce((result,currentValue)=>{
+            return result>currentValue?result:currentValue;
+        })
+        document.getElementById("demo2").innerHTML = output2;
+        
+
+    </script>
+</body>
+
+</html>

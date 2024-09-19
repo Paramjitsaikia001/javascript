@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="class">Hello JS</div>
+    <div class="class">we can modify our element using querySelectorAll</div>
+    <div id="demo"></div>
+    <script>
+        const text = document.querySelectorAll("body");
+        // document.getElementById("demo").innerHTML = text[0].innerHTML;
+        document.querySelector("demo").innerHTML=text.innerHTML
+    </script>
+</body>
+
+</html>

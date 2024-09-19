@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array in js</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <div id="demo2"></div>
+    <div id="demo3"></div>
+    <div id="demo4"></div>
+    <div id="demo5"></div>
+    <div id="demo6"></div>
+    <div id="demo7"></div>
+    <div id="demo8"></div>
+    <div id="demo9"></div>
+    <div id="demo10"></div>
+    <div id="demo11"></div>
+    <div id="demo12"></div>
+    <div id="demo13"></div>
+    <div id="demo14"></div>
+    <div id="demo15"></div>
+    <div id="demo16"></div>
+    <div id="demo17"></div>
+    <div id="demo18"></div>
+    <div id="demo19"></div>
+    <div id="demo20"></div>
+    <div id="demo21"></div>
+    <script>
+        let arr = ["apple", "banana", "mango", "orange"];
+        document.getElementById("demo").innerHTML = arr.length;//measure the length of the array
+        document.getElementById("demo2").innerHTML = arr.toString();//convert the array into string
+        document.getElementById("demo3").innerHTML = arr.at(3);//return the value of the index
+        document.getElementById("demo4").innerHTML = arr.join("*");//separate the array as you mention
+        document.getElementById("demo5").innerHTML = arr.pop();//return the last index value
+        document.getElementById("demo6").innerHTML = arr.push("graps");//can add a new value in end and this return the length of the new array
+        document.getElementById("demo7").innerHTML = arr;//apple,banana,mango,graps
+        document.getElementById("demo8").innerHTML = arr.shift();//it can remove the first index value
+        document.getElementById("demo9").innerHTML = arr;//banana,mango,graps
+        document.getElementById("demo10").innerHTML = arr.unshift("orange","nuts");//this function can the add new index value in the begining of the array and return the length of the array
+        document.getElementById("demo11").innerHTML = arr;//orange,nuts,banana,mango,graps
+        delete arr[0];//delete the elements and make it undefined
+        document.getElementById("demo12").innerHTML = arr[0];//underfined
+        let arr2=["potato","onion","tomato","pea","colliflower"]
+        let arr3=["bread","milk"]
+        document.getElementById("demo13").innerHTML = arr.concat(arr2,arr3);//this function use for add two or more array
+        document.getElementById("demo14").innerHTML = arr.concat("apple");//it can add the string value in the end of the array
+        arr[0]="orange";//add in the undefined position 
+        document.getElementById("demo16").innerHTML = "main array is : "+ arr;
+        document.getElementById("demo17").innerHTML = arr.copyWithin(2,1);//the second parameter here 1 say that from 1 index copy the array and the first parameter of the function says the copied array paste the the index here 2
+        document.getElementById("demo18").innerHTML = "copy within: "+ arr2.copyWithin(3,1,2);/*3: The target index (where the copying starts). In this case, it means that the copying will start at index 3.
+1: The start index of the elements to be copied from. This means copying begins from index 1 (which is "Orange").
+2: The end index (non-inclusive) up to which the elements are copied. The copying stops just before index 2, so only index 1 is copied.*/
+
+let arr4=[[1,2],[3,4],[5,6]];
+let flat= arr4.flat();
+document.getElementById("demo19").innerHTML ="length of arr4: "+arr4.length+"<br>length of the array is after using flat: "+flat.length;//creates a new array with sub-array elements concatenated to a specified depth.
+let num=["1","2","3","4","5"];
+num.splice(2,0,"chili","bracolii");//this can add value from the first parameter as mention in function and delete value the no. of second parameter
+document.getElementById("demo20").innerHTML = num;
+document.getElementById("demo21").innerHTML = num.toSpliced(0,2);//delete the value from first parameter to second parameter and print futher values
+// document.getElementById("demo21").innerHTML = num.splice(1,5);//print first parameter index to last parameter index
+</script>
+
+</body>
+
+</html>

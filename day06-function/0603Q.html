@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script>
+        let arr = "paramjit";
+        let cout = 0;
+        function coutVowel(str) {
+            for (const key of str) {
+                if (
+                    // str[key] == 'a' || str[key] == 'e' || str[key] == 'i' || str[key] == '0' || str[key] == 'u'
+                    key=='a' ||  key=='e' ||  key=='i' ||  key=='o' ||  key=='u'
+                ) {
+
+                    cout++;
+
+                }
+            }
+            return cout;
+        }
+        document.getElementById("demo").innerHTML=coutVowel(arr);
+    </script>
+</body>
+
+</html>

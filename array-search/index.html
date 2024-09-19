@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <div id="demo1"></div>
+    <div id="demo2"></div>
+    <div id="demo3"></div>
+    <div id="demo4"></div>
+    <script>
+        let student=["paramjit","debo","champak","ritu"];
+        document.getElementById("demo").innerHTML=student.indexOf("debo");//find the index
+        document.getElementById("demo1").innerHTML=student.includes("debo");//see is it availabe
+        document.getElementById("demo2").innerHTML=student.includes("hirak");
+        const numbers = [4, 9, 16, 25, 29];
+        function myfunction(value,index,array){
+            return value>14;//this function return tha value greater than 14 
+        }
+        document.getElementById("demo3").innerHTML=numbers.find(myfunction);// find the number return than 14
+        document.getElementById("demo4").innerHTML=numbers.findlast(x => x > 20)
+    </script>
+</body>
+</html>

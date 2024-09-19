@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>DOM document in js</h2>
+    <h2>my name is paramjit saikia</h2>
+    <p  class="lorem" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto delectus quaerat exercitationem
+        ipsum obcaecati corporis, alias aperiam nihil voluptates itaque facilis in iusto laboriosam voluptatum,
+        voluptatibus culpa magnam. Repudiandae, quidem.
+    </p>
+    <button  onclick="myfunction()">clear the lorem</button>
+    <script>
+        document.getElementsByTagName("h2")[0].innerHTML = "paramjit saikia"
+        function myfunction() {
+            document.getElementsByClassName("lorem")[0].attribute = "h2"
+        }
+    </script>
+</body>
+
+</html>
